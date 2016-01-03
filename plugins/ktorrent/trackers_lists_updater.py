@@ -12,6 +12,7 @@ from urllib2 import urlopen
 t = Kross.module("kdetranslation")
 
 TRACKERS_URL = 'https://raw.githubusercontent.com/ohadcn/torrentTrackersList/master/lists/good.txt'
+DEAD_TRACKERS_URL = 'https://raw.githubusercontent.com/ohadcn/torrentTrackersList/master/lists/dead.txt'
 
 class trackerListUpdater:
 	def __init__(self):
@@ -59,9 +60,10 @@ class trackerListUpdater:
 			if self.autoRetry:
 				self.startTimer()
 			return
+		#TODO: autoupload user trackers, if they are not already in the list
 		if self.updateBack:
 			try:
-				self.deadTrackers = dict.fromKeys(urlopen(TRACKERS_URL).read().split('\n'))
+				self.deadTrackers = dict.fromKeys(urlopen(DEAD_TRACKERS_URL).read().split('\n'))
 			except:
 				log('can\'t get dead trackers list: unenabeling update back')
 				self.deadTrackers = {}
