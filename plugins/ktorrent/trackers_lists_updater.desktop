@@ -1,0 +1,17 @@
+[Desktop Entry]
+Name=Trackers Lists Updater
+Name[en_GB]=Trackers Lists Updater
+Name[x-test]=xxTrackers Lists Updaterxx
+Name[he]=מעדכן טראקרים אוטומטי
+Comment=Script to automatically add public Trackers to torrents trackers list, this may help you find more seeders and dow nload files faster
+Comment[en_GB]=Script to automatically add public Trackers to torrents trackers list, this may help you find more seeders and dow nload files faster
+Comment[x-test]=xxScript to automatically add public Trackers to torrents trackers list, this may help you find more seeders and dow nload files fasterxx
+Comment[he]=סקריפט להוספה אוומטית של טראקרים ציבוריים
+Type=KTorrentScript
+Icon=kt-bandwidth-scheduler
+X-KTorrent-Script-Author=Ohad Cohen
+X-KTorrent-Script-Email=ohadcn@gmail.com
+X-KTorrent-Script-Website=http://ktorrent.org/
+X-KTorrent-Script-License=LGPL
+X-KTorrent-Script-File=trackers_lists_updater.py
+
